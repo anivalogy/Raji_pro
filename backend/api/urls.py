@@ -3,4 +3,7 @@ from api.views import *
 urlpatterns = [
     path('',index,name='index'),
     path('home',home,name='home'),
+    path('cs',cs,name='cs'),
+
+    
 ]

@@ -1,0 +1,124 @@
+{%extends 'main.html'%}
+
+
+{%  block body %}
+
+{% ifequal error "no" %}
+<script>
+  alert('Logged IN successfully');
+  window.location=(
+    "{% url 'login' %}"
+    );
+</script>
+{% endifequal %}
+
+{% ifequal error "yes" %}
+<script>
+  alert('Invalid !!,try agian');
+</script>
+{% endifequal %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<body>
+		<!-- ====== Login ======  -->
+		<section class="login">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
+						<div class="login-box">
+							<div class="login-info text-center mb-50">
+								<h4>Login</h4>
+							</div>
+							<form method="post">
+								{% csrf_token %}
+								<input type="text" name="uname" placeholder="User-Name" class="form-control">
+        						<input type="password" name="pwd" class="form-control">
+        						<input type="submit" value="Login" class="form-control btn btn-primary">
+							</form>
+						</div>
+					</div>
+					<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
+						<div class="login-link">
+							<p>Don't have an account yet? <span><a href="{%url 'account'%}">Create Account</a></span></p>
+							<p>Forgot your username or password? <span><a href="{%url 'error'  %}">Recover Account</a></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ====== End Login ======  -->
+
+    <!--====== Footer ======-->
+    <footer>
+
+      <!-- small footer -->
+      <div class="small-footer">
+        <div class="container">
+          <div class="row">
+
+            <!-- item -->
+            <div class="item">
+              <div class="col-md-6">
+                <h4 class="footer-logo">Django</h4>
+                <div class="links">
+                  <span>Home</span><span>About</span><span>Services</span><span>Contact</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="social-icon">
+                  <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span>
+                </div>
+                <p>Copy Right &copy; By HishamM 2017 | All Rights Reserved.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--====== End Footer ======-->
+
+		
+		
+		<!--====== js ======-->
+
+    </body>
+
+</html>
+{%endblock%}

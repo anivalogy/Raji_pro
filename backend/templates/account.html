@@ -1,0 +1,163 @@
+{% extends 'coming_soon.html' %}
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Always force latest IE rendering engine -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="description" content="tona is a responsive creative agency template">
+		<meta name="keywords" content="portfolio, personal, corporate, business, parallax, creative, agency">
+
+		<!-- Title -->
+		<title>Tona</title>
+
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Dosis:100,400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+		<!-- Font awesome Core CSS -->
+		<link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/bundles/511631ef05b56b32372527eb9bf6738b378cdf50.css'/>
+		
+
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Custom style CSS -->
+		<link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/1ab8a2813b828b5ed3e1d89dadd9fa20a0a8c1fb/css/style.css'/>
+
+		<!-- responsive CSS -->
+		<link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/css/47ee5ef18eafc07d50cb8aae076a35d5c6c6d6fd/css/responsive.css'/>
+
+		<!--[if lt IE 9]-->
+		<script src='https://d33wubrfki0l68.cloudfront.net/js/1f551ad794ba616cbdeff4c3af350b88a85a559e/js/html5shiv.min.js'></script>
+		<!--[endif]-->
+	</head>
+	<body>
+
+		<!-- ====== Preloader ======  -->
+	    <div class="loading">
+			<div class="spinner">
+			  <div class="rect1"></div>
+			  <div class="rect2"></div>
+			  <div class="rect3"></div>
+			  <div class="rect4"></div>
+			  <div class="rect5"></div>
+			</div>
+		</div>
+		<!-- ======End Preloader ======  -->
+
+
+	
+
+		<!-- ====== Login ======  -->
+		<section class="login">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+						<div class="login-box">
+							<div class="login-info text-center mb-50">
+								<h4>Create Account</h4>
+							</div>
+
+							<form>
+								<div class="col-sm-6">
+									<input type="text" name="first_name" placeholder="First Name">
+								</div>
+								<div class="col-sm-6">
+									<input type="text" name="last_name" placeholder="Last Name">
+								</div>
+								<div class="col-sm-12">
+									<input type="text" name="email" placeholder="E-Mail">
+								</div>
+								<div class="col-sm-12">
+									<input type="text" name="pass" placeholder="Password">
+								</div>
+								<div class="col-sm-12">
+									<input type="submit" name="send" value="Sign In">
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+						<div class="login-link">
+							<p>Already Have An Account! <span><a href='/login'>Login</a></span></p>
+							<p>Forgot your username or password? <span><a href="{%url 'coming_soon' %}">Recover account</a></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ====== End Login ======  -->
+
+    <!--====== Footer ======-->
+    <footer>
+
+      <!-- small footer -->
+      <div class="small-footer">
+        <div class="container">
+          <div class="row">
+
+            <!-- item -->
+            <div class="item">
+              <div class="col-md-6">
+                <h4 class="footer-logo">Django</h4>
+                <div class="links">
+                  <span>Home</span><span>About</span><span>Services</span><span>Contact</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="social-icon">
+                  <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                  <span><i class="fa fa-github" aria-hidden="true"></i></span>
+                </div>
+                <p>Copy Right &copy; By HishamM 2017 | All Rights Reserved.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--====== End Footer ======-->
+
+		
+		
+		<!--====== js ======-->
+
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+
+	  	<!-- bootstrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+      	<!-- validator js -->
+      	<script src='https://d33wubrfki0l68.cloudfront.net/js/8166dcc97a4c45dd4f117a8e9134a6b9ad1ad64a/js/validator.js'></script>
+
+      	<!-- custom js -->
+		  <script src='https://d33wubrfki0l68.cloudfront.net/js/cc5e4613fb169a4ee406a71e6218bac9ada831de/js/custom.js'></script>
+	
+
+
+	</body>
+</html>

@@ -1,0 +1,109 @@
+{% extends './layout/home.html' %}
+{% block body %}
+
+{%load static%}
+	<body>
+		<!-- ====== Header ======  -->
+		<header id="home" class="sub-header portfolio-bg" data-stellar-background-ratio="0.5">
+			<!-- header content -->
+			<div class="caption v-middle text-center">
+				<h1>Portfolio Of ALL projects</h1>
+				<span>Anivalogy Gallery</span>
+			</div>
+		</header>
+		<!-- ====== End Header ======  -->
+{% block contenido %}
+		<!--====== Portfolio ======-->
+		<section id="portfolio" class="portfolio gutter section-padding">
+			<div class="container">
+				
+				<div class="row">
+
+					<!-- filter links -->
+					<div class="filtering text-center mb-50">
+						<span data-filter='*' class="active">All</span>
+						<span data-filter='.brand'>Brand</span>
+						<span data-filter='.web'>Design</span>
+						<span data-filter='.photo'>Photo</span>
+						<span data-filter='.video'>Video</span>
+					</div>
+					{% for photo in photos %}
+					<!-- gallery -->
+					<div class="gallery text-center">
+						<!-- gallery item -->
+						<div class="col-md-6 item-img video">
+								{% if photo.image %}
+								<img src="{{ photo.image.url}}" alt="image">
+								<div class="item-img-overlay">
+									<span class="v"></span>
+									<span class="x"></span>
+									<div class="overlay-info v-middle text-center">
+										<h6>{{ photo.title }}</h6>
+										<p>{{photo.desc}}</p>
+									</div>
+								</div>
+						</div>
+						{% endif %}
+{%endfor%}
+					{% for photo in photos %}
+						<!-- gallery item -->
+						<div class="col-md-6 item-img web">
+								{% if photo.image1 %}
+								<img src="{{ photo.image1.url}}" alt="image">
+								{%endif%}
+								<div class="item-img-overlay">
+									<span class="v"></span>
+									<span class="x"></span>
+									<div class="overlay-info v-middle text-center">
+									<h6>{{ photo.title1 }}</h6>
+										<p>{{photo.desc1}}</p>
+									</div>
+								</div>
+						</div>
+{% endfor %}
+					{% for photo in photos %}
+						<!-- gallery item -->
+						<div class="col-md-6 item-img brand">
+									{% if photo.image2 %}
+								<img src="{{photo.image2.url}}" alt="image">
+								{%endif%}
+								<div class="item-img-overlay">
+									<span class="v"></span>
+									<span class="x"></span>
+									<div class="overlay-info v-middle text-center">
+										<h6>{{ photo.title2 }}</h6>
+										<p>{{photo.desc2}}</p>
+									</div>
+								</div>
+						</div>
+{%endfor%}
+					{% for photo in photos %}
+
+						<!-- gallery item -->
+						<div class="col-md-6 item-img photo">
+							{% if photo.image3 %}
+								<img src="{{photo.image3.url}}" alt="image">
+								{%endif%}
+								<div class="item-img-overlay">
+									<span class="v"></span>
+									<span class="x"></span>
+									<div class="overlay-info v-middle text-center">
+										<h6>{{ photo.title3 }}</h6>
+										<p>{{photo.desc3}}</p>
+									</div>
+								</div>
+						</div>
+						{%endfor%}
+{% endblock  %}
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--====== End Portfolio ======-->
+
+
+	</body>
+</html>
+{% endblock %}
+    

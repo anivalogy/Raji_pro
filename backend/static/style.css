@@ -2109,7 +2109,7 @@ footer .small-footer p{
 -------------------------------------------------------- */
 
 .demo-1{
-	background-image: url("/media/pics/19618.jpg");
+	background-image: url("/backend/media/pics/19618.jpg");
 }
 
 /* -------------------------------------------------------
@@ -2117,7 +2117,7 @@ footer .small-footer p{
 -------------------------------------------------------- */
 
 .demo-2{
-	background-image: url("../media/pics/945973.jpg");
+	background-image: url("/backend/media/pics/945973.jpg");
 }
 
 .typed-cursor{

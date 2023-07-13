@@ -9,7 +9,21 @@ from .models import *
 
 
 def login(request):
-    return render(request,'login.html')
+    error=""
+    if request.method=='POST':
+        u=request.POST["uname"]
+        p=request.POST["pwd"]
+        User = authenticate(username=u,password=p)
+        try:
+            if User.is_staff:
+                login(request, User)
+                error="no"
+            else:
+                error="yes"
+        except:
+            error="yes"
+    d = {'error':error}
+    return render(request,'login.html', d)
 
 
 def logout(request):
